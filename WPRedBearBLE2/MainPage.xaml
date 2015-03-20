@@ -47,8 +47,9 @@
             <TextBox x:Name="txtMessage" IsEnabled="False" />
             <Button x:Name="btnSendMessage" Content="Send Message" IsEnabled="False"/>
             <TextBlock TextWrapping="Wrap" Text="Output:" Margin="9,0,9,0" Style="{StaticResource PhoneTextNormalStyle}" />
-            <TextBox x:Name="txtOutput" VerticalAlignment="Stretch"/>
-            
+            <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible">
+                <TextBox x:Name="txtOutput" />
+            </ScrollViewer>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
